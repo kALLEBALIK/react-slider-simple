@@ -76,7 +76,7 @@ export default class Slider extends Component {
     this.shouldUpdateProps(np, this.props);
 
 
-  compontWillUnmount() {
+  componentWillUnmount() {
     this.removeDocumentMouseEventListeners();
     this.removeWindowListeners();
   }
