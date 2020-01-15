@@ -100,8 +100,10 @@ export default class Slider extends Component {
 
 
   onWindowResize = () => {
-    this._sliderWidth = this._sliderRef.clientWidth;
-    this.forceUpdate();
+    if(this._sliderRef){
+      this._sliderWidth = this._sliderRef.clientWidth;
+      this.forceUpdate();
+    }
   };
 
 
